@@ -1,0 +1,98 @@
+<footer class="h-[334px] bg-black lg:h-[443px] md:px-3">
+  <div class="lg:p-5 lg:flex lg:justify-between">
+    <h1
+      class="lg:text-2xl lg:leading-6 font-bold text-base text-white hover:text-orange-500 text-center sm:text-start sm:ml-3 sm:pt-5">
+      <a href="#"
+        >PetStory<i class="fa-solid fa-cat text-white text-3xl"></i
+      ></a>
+    </h1>
+    <form class="hidden lg:block" [formGroup]="Form" (ngSubmit)="onSubmit()">
+      <label for="email" class="text-white">Subscribe to our news</label>
+      <br />
+      <label class="sr-only" for="email">Email address</label>
+      <input
+        formControlName="Email"
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Enter your email"
+        class="text-gray-100 border-solid border-2 border-red-400 bg-black rounded w-[228px] h-[42px]" />
+      <input
+        [disabled]="!Form.valid"
+        type="button"
+        class="bg-white text-green-500 w-[129px] h-[42px] border-2 border-solid border-green-400 rounded ml-1"
+        value="Submit"/>
+    </form>
+  </div>
+
+  <div
+    class="text-center mt-6 sm:text-end sm:flex sm:flex-col sm:mt-0 lg:hidden">
+    <span
+      ><i
+        class="fa-brands fa-facebook text-gray-400 pr-6 hover:text-green-500"></i
+    ></span>
+    <span
+      ><i
+        class="fa-brands fa-twitter text-gray-400 pr-6 hover:text-green-500 sm:pt-4"></i
+    ></span>
+    <span
+      ><i
+        class="fa-brands fa-instagram text-gray-400 pr-6 hover:text-green-500 sm:pt-4"></i
+    ></span>
+    <span
+      ><i
+        class="fa-brands fa-youtube text-gray-400 hover:text-green-500 sm:pr-6 sm:pt-4"></i
+    ></span>
+  </div>
+  <button
+    class="lg:ml-5 lg:mt-[81px] sm:mt-[-60px] mt-6 ml-3 w-[298px] h-[54px] rounded bg-orange-500 text-white uppercase text-base leading-5 hover:bg-green-500">
+    donate for volunteers
+  </button>
+  <div class="mt-[44px] gap-3 hidden lg:block ml-5">
+    <div class="mb-2">
+      <a href="" class="text-white hover:text-green-500"
+        ><i
+          class="fa-brands fa-facebook text-gray-400 pr-3 hover:text-green-500"></i
+        >Facebook</a
+      >
+    </div>
+    <div class="mb-2">
+      <a href="" class="text-white hover:text-green-500"
+        ><i
+          class="fa-brands fa-twitter text-gray-400 pr-3 hover:text-green-500"></i
+        >Twitter</a
+      >
+    </div>
+    <div class="mb-2">
+      <a href="" class="text-white hover:text-green-500"
+        ><i
+          class="fa-brands fa-instagram text-gray-400 pr-3 hover:text-green-500"></i
+        >Instagram</a
+      >
+    </div>
+    <div class="">
+      <a href="" class="text-white hover:text-green-500"
+        ><i
+          class="fa-brands fa-youtube text-gray-400 pr-3 hover:text-green-500"></i
+        >YouTube</a
+      >
+    </div>
+  </div>
+  <div
+    class="text-white font-thin text-base leading-4 text-right mt-8 mr-3 lg:mt-[-10px]">
+    <h2>Designed by Alisa Samborskaya</h2>
+    <h2 class="mt-2">©RSSchool & ©Yem Digital 2021</h2>
+  </div>
+  <div class="sm:w-[300px] lg:mt-[-50px] lg:w-[700px] 2xl:w-[1600px]">
+    <ul
+      class="flex justify-between text-white mx-3 mt-9 sm:mt-auto lg:justify-center lg:text-base lg:font-normal lg:leading-6">
+      <li class="hover:text-orange-400"><a routerLink="./main">About</a></li>
+      <li class="hover:text-orange-400 lg:ml-10">
+        <a routerLink="./donate">Donate</a>
+      </li>
+      <li class="hover:text-orange-400 lg:ml-10">
+        <a routerLink="./contact">Contact us</a>
+      </li>
+    </ul>
+  </div>
+</footer>

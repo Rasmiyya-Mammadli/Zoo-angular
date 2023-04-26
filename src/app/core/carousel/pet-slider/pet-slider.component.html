@@ -1,0 +1,19 @@
+<div
+  class="grid-cols-1 gap-3 grid sm:grid-cols-2 md:w-[610px] lg:w-[966px] mx-auto lg:grid-cols-3 xl:w-[1158px] 2xl:m-auto myAnimals">
+  <div
+    *ngFor="let animal of animals"
+    class="fade lg:mb-[90px] rounded-md w-[285px] h-[322px] border border-[#FA6F32] m-auto lg:w-[294px] lg:h-[354px] xl:w-[366px] xl:h-[426px]">
+    <img [src]="animal.src" alt="" />
+    <h4
+      class="text-xs font-medium leading-4 ml-4 uppercase xl:leading-6 xl:font-bold xl:text-base">
+      {{ animal.name }}
+    </h4>
+    <p class="ml-4 text-xs">{{ animal.country }}</p>
+  </div>
+</div>
+<i
+  (click)="shuffleArray(animals)"
+  class="hidden lg:top-[1557px] xl:top-[1827px] 2xl:top-[1927px] fa-solid fa-circle-arrow-left lg:block sm:text-orange-500 sm:text-7xl sm:top-[1023px] sm:left-[223px] 2xl:left-[140px] absolute"></i>
+<i
+  (click)="shuffleArray(animals)"
+  class="hidden lg:top-[1557px] xl:top-[1827px] 2xl:top-[1927px] fa-solid fa-circle-arrow-right lg:block sm:text-orange-500 sm:text-7xl sm:top-[1023px] sm:right-[223px] 2xl:right-[140px] absolute"></i>

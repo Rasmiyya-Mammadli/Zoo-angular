@@ -1,0 +1,52 @@
+input[type="radio"]:checked {
+  background-color: green;
+  border: green 1px solid;
+}
+  .bg {
+      background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+  }
+  .click-inside{
+  border: orange;
+
+}
+  .dflt:nth-child(6)::before{
+  content: '';
+  transition: all 0.3s;
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  border: 1px solid rgb(219, 92, 18);
+  border-radius: 50%;
+  transform: translate(-0.688rem,-0.75rem);
+}
+.dflt:nth-child(6)::after{
+  content: '';
+  width: 1.25rem;
+  height: 1.25rem;
+  display: block;
+  border: 1px solid rgb(219, 92, 18);
+  border-radius: 50%;
+  transform: translate(-0.313rem,-2.5rem);
+}
+  .clicked::before{
+  cursor: pointer;
+  content: '';
+  transition: all 0.3s;
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  border: 1px solid rgb(219, 92, 18);
+  border-radius: 50%;
+  transform: translate(-0.688rem,-0.75rem);
+}
+.clicked::after{
+  cursor: pointer;
+  content: '';
+  width: 1.25rem;
+  height: 1.25rem;
+  display: block;
+  border: 1px solid rgb(219, 92, 18);
+  border-radius: 50%;
+  transform: translate(-0.313rem,-2.5rem);
+}
+
