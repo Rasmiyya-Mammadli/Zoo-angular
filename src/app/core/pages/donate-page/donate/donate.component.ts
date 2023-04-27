@@ -16,7 +16,6 @@ export class DonateComponent implements OnInit {
     const radArr = Array.from(radios) as HTMLDivElement[];
     let isClicked = false;
     const dflt = document.querySelector('.dflt') as HTMLDivElement;
-  
 
     radArr.forEach(rad => {
       rad.addEventListener('click', (e: MouseEvent) => {
@@ -27,6 +26,7 @@ export class DonateComponent implements OnInit {
           rad.classList.remove('click-inside');
         });
         if ((e.target as HTMLDivElement).classList.contains('dflt')) {
+          /* empty */
         } else {
           dflt.classList.remove('dflt');
         }

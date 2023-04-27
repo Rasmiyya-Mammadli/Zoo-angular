@@ -8,14 +8,20 @@
     <div
       class="rounded-full bg-orange-500 w-[119px] h-[119px] m-5 sm:w-[238px] sm:h-[238px] lg:w-[367px] lg:h-[367px] lg:my-auto lg:mr-12 xl:w-[465px] xl:h-[465px] xl:mr-[300px] xl:mt-10">
       <p
-        class="uppercase w-32 h-25 text-2xl leading-5 text-center font-bold text-white pt-3 sm:w-[255px] sm:h-50 sm:text-5xl sm:p-5 sm:pr-[-30px] sm:leading-10 lg:w-100 lg:h-80 lg:text-[85px] lg:leading-[63px] lg:mt-3 lg:ml-3 xl:w-[500px] xl:h-[400px] xl:text-[106px] xl:leading-[80px] xl:ml-10">
+        class="uppercase w-32 h-25 text-2xl leading-5 text-center font-bold text-white pt-3 sm:w-[255px] sm:h-50 sm:text-5xl sm:p-5 sm:pr-[-30px] sm:leading-10 lg:w-[400px] lg:h-80 lg:text-[85px] lg:leading-[63px] lg:mt-3 lg:ml-3 xl:w-[500px] xl:h-[400px] xl:text-[106px] xl:leading-[80px] xl:ml-10">
         Watch your
         <span class="text-[#FFEE2E] !important">favorite</span> animal online
       </p>
+      <div class="hidden mt-[70px] lg:block lg:flex lg:justify-center">
+        <button
+          class="bg-orange-500 rounded-3xl w-[288px] h-[54px] text-white font-medium text-base hover:bg-green-500">
+          <a routerLink="../not-found-page">WATCH ONLINE</a>
+        </button>
+      </div>
     </div>
   </div>
   <button
-    class="xl:ml-[975px] lg:ml-[645px] lg:mt-5 bg-orange-500 rounded-3xl w-72 h-14 text-white mx-3 mt-9 font-medium text-base hover:bg-green-500 sm:my-auto">
-    WATCH ONLINE
+    class="xl:ml-[975px] lg:ml-[645px] lg:hidden lg:mt-5 bg-orange-500 rounded-3xl w-72 h-14 text-white mx-3 mt-9 font-medium text-base hover:bg-green-500 sm:my-auto">
+    <a routerLink="../not-found-page">WATCH ONLINE</a>
   </button>
 </section>

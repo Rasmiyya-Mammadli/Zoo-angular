@@ -14,11 +14,12 @@ import { Router } from '@angular/router';
 })
 export class FooterComponent implements OnInit {
   Form!: FormGroup;
+
   constructor(private builder: FormBuilder, private router: Router) {}
 
   ngOnInit() {
     this.Form = this.builder.group({
-      Email: new FormControl('', [Validators.required]),
+      Email: new FormControl('', [Validators.required, Validators.email]),
     });
   }
 
